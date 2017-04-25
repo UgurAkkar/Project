@@ -9,11 +9,12 @@ namespace Mini_Project
     class Cards
     {
         string suits, value;
+        int waarde;
         bool used;
-        public Cards(string suits, string value, bool used)
+        public Cards(string suits, string value, bool used, int waarde)
         {
             this.Suits = suits;
-
+            this.waarde = waarde;
             switch (Convert.ToInt32(value))
             {
                 case 0:
@@ -96,6 +97,19 @@ namespace Mini_Project
             set
             {
                 this.value = value;
+            }
+        }
+
+        public int Waarde
+        {
+            get
+            {
+                return waarde;
+            }
+
+            set
+            {
+                waarde = value;
             }
         }
     }

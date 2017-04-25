@@ -15,10 +15,11 @@
         <Image x:Name="imgComp2" HorizontalAlignment="Left" Height="100" Margin="133,122,0,0" VerticalAlignment="Top" Width="75"/>
         <Image x:Name="imgPlay2" HorizontalAlignment="Left" Height="100" Margin="305,122,0,0" VerticalAlignment="Top" Width="76"/>
         <Image x:Name="imgPlay1" HorizontalAlignment="Left" Height="100" Margin="423,122,0,0" VerticalAlignment="Top" Width="75"/>
-        <TextBox x:Name="txtResult" HorizontalAlignment="Left" Height="51" Margin="58,248,0,0" TextWrapping="Wrap" Text="lllllllllllllllllllllllllllllllllllllllllllll" VerticalAlignment="Top" Width="405" FontSize="36" IsEnabled="False"/>
+        <TextBox x:Name="txtResult" HorizontalAlignment="Left" Height="51" Margin="58,248,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="405" FontSize="36" IsEnabled="False"/>
         <Label x:Name="label1" Content="" HorizontalAlignment="Left" Margin="256,54,0,0" VerticalAlignment="Top" Background="Black" Height="189" Width="5"/>
         <Label x:Name="lblComp" Content="" HorizontalAlignment="Left" Margin="58,222,0,0" VerticalAlignment="Top" Width="90"/>
         <Label x:Name="lblPlay" HorizontalAlignment="Left" Margin="333,222,0,0" VerticalAlignment="Top" Width="90"/>
+        <Label x:Name="lblshuffeld" Content="" HorizontalAlignment="Left" Margin="223,28,0,0" VerticalAlignment="Top"/>
 
     </Grid>
 </Window>
