@@ -1,0 +1,24 @@
+﻿<Window x:Class="Mini_Project.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Mini_Project"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <Button x:Name="btnShuffle" Content="Shuffle Cards" HorizontalAlignment="Left" Margin="171,10,0,0" VerticalAlignment="Top" Width="147" Click="btnShuffle_Click"/>
+        <Button x:Name="btnDealCards" Content="Deal Cards" HorizontalAlignment="Left" Margin="360,10,0,0" VerticalAlignment="Top" Width="147" Click="btnDealCards_Click"/>
+        <Label x:Name="label" Content="COMPUTER" HorizontalAlignment="Left" Margin="10,59,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="36"/>
+        <Label x:Name="label_Copy" Content="PLAYER" HorizontalAlignment="Left" Margin="325,59,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="36"/>
+        <Image x:Name="imgComp1" HorizontalAlignment="Left" Height="100" Margin="10,122,0,0" VerticalAlignment="Top" Width="75"/>
+        <Image x:Name="imgComp2" HorizontalAlignment="Left" Height="100" Margin="133,122,0,0" VerticalAlignment="Top" Width="75"/>
+        <Image x:Name="imgPlay2" HorizontalAlignment="Left" Height="100" Margin="305,122,0,0" VerticalAlignment="Top" Width="76"/>
+        <Image x:Name="imgPlay1" HorizontalAlignment="Left" Height="100" Margin="423,122,0,0" VerticalAlignment="Top" Width="75" Source="Cards/cardback.png"/>
+        <TextBox x:Name="txtResult" HorizontalAlignment="Left" Height="51" Margin="58,248,0,0" TextWrapping="Wrap" Text="lllllllllllllllllllllllllllllllllllllllllllll" VerticalAlignment="Top" Width="405" FontSize="36" IsEnabled="False"/>
+        <Label x:Name="label1" Content="" HorizontalAlignment="Left" Margin="256,54,0,0" VerticalAlignment="Top" Background="Black" Height="189" Width="5"/>
+        <Label x:Name="lblComp" Content="" HorizontalAlignment="Left" Margin="58,222,0,0" VerticalAlignment="Top" Width="90"/>
+        <Label x:Name="lblPlay" Content="Label" HorizontalAlignment="Left" Margin="333,222,0,0" VerticalAlignment="Top" Width="90"/>
+
+    </Grid>
+</Window>
