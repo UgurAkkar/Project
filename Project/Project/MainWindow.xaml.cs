@@ -22,7 +22,8 @@ namespace Mini_Project
     {
         Cards[] kaarten = new Cards[53];
         Random rndKaarten = new Random();
-
+        int counter = 0;
+        int comp, play;
         public MainWindow()
         {
             InitializeComponent();
@@ -54,57 +55,99 @@ namespace Mini_Project
 
             }
 
-            //BitmapImage cardback = new BitmapImage();
-            //cardback.BeginInit();
-            //cardback.UriSource = new Uri(@"Cards\cardback.png", UriKind.RelativeOrAbsolute);
-            //cardback.EndInit();
+            counter = 0;
+            btnDealCards.IsEnabled = true;          
 
-            //BitmapImage image = new BitmapImage(new Uri("Cards/cardback.png", UriKind.Relative));
-
-            //imgComp1.Source = image;
+            BitmapImage image = new BitmapImage(new Uri(@"\images\cardback.png", UriKind.Relative));
+            imgComp1.Source = image;
+            imgPlay1.Source = image;
 
         }
 
         private void btnDealCards_Click(object sender, RoutedEventArgs e)
         {
+            DealCards();
+        }
 
+        
+
+        public void DealCards()
+        {
             int rnd1 = rndKaarten.Next(52);
             int rnd2 = rndKaarten.Next(52);
-
-            if (kaarten[(rnd1)].Used == true) {
-                do
-                {
-                    rnd1 = rndKaarten.Next(52);
-                } while (kaarten[rnd1].Used == true);
-
-                lblComp.Content = kaarten[(rnd1)].Value + " of " + kaarten[(rnd1)].Suits;
-                kaarten[rnd1].Used = true;
-
-            }
-            else
-            {
-                lblComp.Content = kaarten[(rnd1)].Value + " of " + kaarten[(rnd1)].Suits;
-                kaarten[rnd1].Used = true;
-            }
-
-            if (kaarten[(rnd2)].Used == true)
-            {
-                do
-                {
-                    rnd2 = rndKaarten.Next(52);
-                } while (kaarten[rnd2].Used == true);
-
-                lblPlay.Content = kaarten[(rnd2)].Value + " of " + kaarten[(rnd2)].Suits;
-                kaarten[rnd2].Used = true;
-            }
-            else
-            {
-                lblPlay.Content = kaarten[(rnd2)].Value + " of " + kaarten[(rnd2)].Suits;
-                kaarten[rnd2].Used = true;
-            }
-
-
             
+
+            if (AllesUitgedeeld() == false)
+            {
+                if (kaarten[(rnd1)].Used == true)
+                {
+                    do
+                    {
+                        rnd1 = rndKaarten.Next(52);
+                    } while (kaarten[rnd1].Used == true);
+
+                    lblComp.Content = kaarten[(rnd1)].Value + " of " + kaarten[(rnd1)].Suits;
+                    BitmapImage image = new BitmapImage(new Uri("\\images\\" + Convert.ToString(kaarten[(rnd1)].Value + kaarten[(rnd1)].Suits) + ".png", UriKind.Relative));
+                    imgComp2.Source = image;
+                    kaarten[rnd1].Used = true;
+
+                }
+                else
+                {
+                    lblComp.Content = kaarten[(rnd1)].Value + " of " + kaarten[(rnd1)].Suits;
+                    BitmapImage image = new BitmapImage(new Uri("\\images\\" + Convert.ToString(kaarten[(rnd1)].Value + kaarten[(rnd1)].Suits) + ".png", UriKind.Relative));
+                    imgComp2.Source = image;
+
+                    kaarten[rnd1].Used = true;
+                }
+
+                if (kaarten[(rnd2)].Used == true)
+                {
+                    do
+                    {
+                        rnd2 = rndKaarten.Next(52);
+                    } while (kaarten[rnd2].Used == true);
+
+                    lblPlay.Content = kaarten[(rnd2)].Value + " of " + kaarten[(rnd2)].Suits;
+                    BitmapImage image = new BitmapImage(new Uri("\\images\\" + Convert.ToString(kaarten[(rnd2)].Value + kaarten[(rnd2)].Suits) + ".png", UriKind.Relative));
+                    imgPlay2.Source = image;
+
+                    kaarten[rnd2].Used = true;
+                }
+                else
+                {
+                    lblPlay.Content = kaarten[(rnd2)].Value + " of " + kaarten[(rnd2)].Suits;
+                    BitmapImage image = new BitmapImage(new Uri("\\images\\" +Convert.ToString(kaarten[(rnd2)].Value + kaarten[(rnd2)].Suits) + ".png", UriKind.Relative));
+                    imgPlay2.Source = image;
+
+                    kaarten[rnd2].Used = true;
+                }
+            }
+
+        }
+
+
+        public bool AllesUitgedeeld()
+        {
+           
+            if (counter != 26)
+            {
+                counter++;
+                return false;
+                
+            }
+            else
+            {
+                MessageBox.Show("Kaarten zijn uitgedeeld!");
+                return true;
+            }
+
+        }
+
+        public void results()
+        {
+
+
         }
     }
 }

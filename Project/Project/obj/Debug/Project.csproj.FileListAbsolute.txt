@@ -12,3 +12,17 @@ C:\Users\ugur-\Desktop\Test\Project\Project\obj\Debug\Project.Properties.Resourc
 C:\Users\ugur-\Desktop\Test\Project\Project\obj\Debug\Project.csproj.GenerateResource.Cache
 C:\Users\ugur-\Desktop\Test\Project\Project\obj\Debug\Project.exe
 C:\Users\ugur-\Desktop\Test\Project\Project\obj\Debug\Project.pdb
+C:\Users\ugur-\Documents\GitHub\Project\Project\Project\bin\Debug\Project.exe.config
+C:\Users\ugur-\Documents\GitHub\Project\Project\Project\obj\Debug\Project.exe
+C:\Users\ugur-\Documents\GitHub\Project\Project\Project\obj\Debug\Project.pdb
+C:\Users\ugur-\Documents\GitHub\Project\Project\Project\obj\Debug\Project.csprojResolveAssemblyReference.cache
+C:\Users\ugur-\Documents\GitHub\Project\Project\Project\obj\Debug\MainWindow.g.cs
+C:\Users\ugur-\Documents\GitHub\Project\Project\Project\obj\Debug\App.g.cs
+C:\Users\ugur-\Documents\GitHub\Project\Project\Project\obj\Debug\Project_MarkupCompile.cache
+C:\Users\ugur-\Documents\GitHub\Project\Project\Project\obj\Debug\Project_MarkupCompile.lref
+C:\Users\ugur-\Documents\GitHub\Project\Project\Project\bin\Debug\Project.exe
+C:\Users\ugur-\Documents\GitHub\Project\Project\Project\bin\Debug\Project.pdb
+C:\Users\ugur-\Documents\GitHub\Project\Project\Project\obj\Debug\MainWindow.baml
+C:\Users\ugur-\Documents\GitHub\Project\Project\Project\obj\Debug\Project.g.resources
+C:\Users\ugur-\Documents\GitHub\Project\Project\Project\obj\Debug\Project.Properties.Resources.resources
+C:\Users\ugur-\Documents\GitHub\Project\Project\Project\obj\Debug\Project.csproj.GenerateResource.Cache
