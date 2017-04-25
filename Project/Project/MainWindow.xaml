@@ -5,21 +5,26 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Mini_Project"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
+        Title="MainWindow" Height="350" Width="464.216">
     <Grid>
-        <Button x:Name="btnShuffle" Content="Shuffle Cards" HorizontalAlignment="Left" Margin="171,10,0,0" VerticalAlignment="Top" Width="147" Click="btnShuffle_Click"/>
-        <Button x:Name="btnDealCards" Content="Deal Cards" HorizontalAlignment="Left" Margin="360,10,0,0" VerticalAlignment="Top" Width="147" Click="btnDealCards_Click" IsEnabled="False"/>
-        <Label x:Name="label" Content="COMPUTER" HorizontalAlignment="Left" Margin="10,59,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="36"/>
-        <Label x:Name="label_Copy" Content="PLAYER" HorizontalAlignment="Left" Margin="325,59,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="36"/>
-        <Image x:Name="imgComp1" HorizontalAlignment="Left" Height="100" Margin="10,122,0,0" VerticalAlignment="Top" Width="75"/>
-        <Image x:Name="imgComp2" HorizontalAlignment="Left" Height="100" Margin="133,122,0,0" VerticalAlignment="Top" Width="75"/>
-        <Image x:Name="imgPlay2" HorizontalAlignment="Left" Height="100" Margin="305,122,0,0" VerticalAlignment="Top" Width="76"/>
-        <Image x:Name="imgPlay1" HorizontalAlignment="Left" Height="100" Margin="423,122,0,0" VerticalAlignment="Top" Width="75"/>
-        <TextBox x:Name="txtResult" HorizontalAlignment="Left" Height="51" Margin="58,248,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="405" FontSize="36" IsEnabled="False"/>
-        <Label x:Name="label1" Content="" HorizontalAlignment="Left" Margin="256,54,0,0" VerticalAlignment="Top" Background="Black" Height="189" Width="5"/>
-        <Label x:Name="lblComp" Content="" HorizontalAlignment="Left" Margin="58,222,0,0" VerticalAlignment="Top" Width="90"/>
-        <Label x:Name="lblPlay" HorizontalAlignment="Left" Margin="333,222,0,0" VerticalAlignment="Top" Width="90"/>
-        <Label x:Name="lblshuffeld" Content="" HorizontalAlignment="Left" Margin="223,28,0,0" VerticalAlignment="Top"/>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="0*"/>
+        </Grid.ColumnDefinitions>
+        <Button x:Name="btnShuffle" Content="Shuffle Cards" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="147" Click="btnShuffle_Click" Height="20"/>
+        <Button x:Name="btnDealCards" Content="Deal Cards" HorizontalAlignment="Left" Margin="299,10,0,0" VerticalAlignment="Top" Width="147" Click="btnDealCards_Click" IsEnabled="False" Height="20"/>
+        <Label x:Name="label" Content="COMPUTER" HorizontalAlignment="Left" Margin="10,59,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="36" Height="58" Width="206"/>
+        <Label x:Name="label_Copy" Content="PLAYER" HorizontalAlignment="Left" Margin="308,59,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="36" Width="138" Height="58"/>
+        <Image x:Name="imgComp1" HorizontalAlignment="Left" Height="100" Margin="10,117,0,0" VerticalAlignment="Top" Width="75"/>
+        <Image x:Name="imgComp2" HorizontalAlignment="Left" Height="100" Margin="90,117,0,0" VerticalAlignment="Top" Width="75"/>
+        <Image x:Name="imgPlay2" HorizontalAlignment="Left" Height="100" Margin="290,117,0,0" VerticalAlignment="Top" Width="76"/>
+        <Image x:Name="imgPlay1" HorizontalAlignment="Left" Height="100" Margin="371,117,0,0" VerticalAlignment="Top" Width="75"/>
+        <TextBox x:Name="txtResult" HorizontalAlignment="Left" Height="51" Margin="10,248,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="436" FontSize="36" IsEnabled="False"/>
+        <Label x:Name="label1" Content="" HorizontalAlignment="Left" Margin="221,35,0,0" VerticalAlignment="Top" Background="Black" Height="189" Width="5"/>
+        <Label x:Name="lblComp" Content="" HorizontalAlignment="Left" Margin="10,222,0,0" VerticalAlignment="Top" Width="198" Height="26" FontWeight="Bold" FontStyle="Italic"/>
+        <Label x:Name="lblPlay" HorizontalAlignment="Center" Margin="290,222,10,0" VerticalAlignment="Top" Width="156" Height="26" Content="" FontWeight="Bold" FontStyle="Italic" FontStretch="Condensed" HorizontalContentAlignment="Right"/>
+        <Label x:Name="lblshuffeld" Content="" HorizontalAlignment="Left" Margin="177,9,0,0" VerticalAlignment="Top" Width="90" FontWeight="Bold" FontStyle="Italic" HorizontalContentAlignment="Right" Height="26"/>
+        <Label x:Name="lbltie" Content="" HorizontalAlignment="Left" Margin="175,222,0,0" VerticalAlignment="Top" Width="92" Height="26" FontWeight="Bold" FontStyle="Italic" HorizontalContentAlignment="Center"/>
 
     </Grid>
 </Window>

@@ -23,7 +23,7 @@ namespace Mini_Project
         Cards[] kaarten = new Cards[53];
         Random rndKaarten = new Random();
         int counter = 0;
-        int comp, play;
+        int comp, play,gelijk;
         public MainWindow()
         {
             InitializeComponent();
@@ -141,6 +141,7 @@ namespace Mini_Project
             txtResult.Text = null;
             comp = 0;
             play = 0;
+            gelijk = 0;
 
         }
 
@@ -155,8 +156,9 @@ namespace Mini_Project
             }
             else
             {
-                MessageBox.Show("Alles uitgedeeld!");
+                lblshuffeld.Content = "Handed Out!";
                 txtResult.Text = "Computer: " + comp + " Player: " + play;
+                lbltie.Content = "Tie: " + gelijk;
                 btnDealCards.IsEnabled = false;
                 return true;
             }
@@ -171,7 +173,7 @@ namespace Mini_Project
             }
             else if (kaarten[rnd1].Waarde == kaarten[rnd2].Waarde)
             {
-                
+                gelijk++;
             }
             else if (kaarten[rnd1].Waarde < kaarten[rnd2].Waarde)
             {
